@@ -3,10 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste</title>
+    <title>PHP</title>
 </head>
+
 <body>
+
+<h1> loop e funções</h1<
+    <?php
+        for ($i=10; $i >= 1; $i--) { 
+           echo $i . "<br>";
+        }
+    ?>
+<hr>
 <?php
+     $i=10;
+while($i >= 1){
+    echo $i . "<br>"; 
+    $i--;
+}
+?>
+<hr>
+<?php
+$i=10;
+    do{
+        echo $i . "<br>";
+        $i--;
+    }while($i >=1);
+?>
+
+<hr>
+
+
+<h1>percorrendo array</h1>
+<?php
+
+    $animais =["leao","gato", "girafa","elefante","cachorro"];
+    echo count($animais);
+    
+    for($i=0;$i <= count($animais);$i++){
+        echo $animais[$i] . "<br>";
+    }
+
+?>
+<hr>
+<h1>percorrendo array while </h1>
+<?php
+    $i=0;
+    while($i <= count($animais)){
+        echo $animais[$i] . "<br>"; 
+        $i++; 
+     }
+     
+
+?>
+<hr>
+<h1>Foreach percorrendo array</h1>
+<?php
+    foreach($animais as $animal){
+        echo  $animal . "<br>";
+    }
+?>
+
+
+<?php
+    $user =[
+        "nome" => "sousa",
+        "sonbreNome"=> "DigitalHouse",
+        "telefone"=>"854788745"
+    ];
+    foreach ($user => key => $value){
+        echo "key => $value"; 
+    }
+?>
+
+<?php
+     /*
     $nome = "gustavo";
 ?>
 
@@ -100,7 +171,7 @@ DESAFIO: CRIAR A TABELA DE TABUADA DE 0 A 10
     var_dump($arrayAssociativo);
     ?>
 
-
-
-</body>
+*/
+?>
+    </body>
 </html>
