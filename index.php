@@ -75,7 +75,13 @@ $i=10;
         echo "key => $value"; 
     }
 ?>
+<hr>
+<h1></h1>
+<?php
+    function tabuada()
 
+
+?>
 <?php
      /*
     $nome = "gustavo";
